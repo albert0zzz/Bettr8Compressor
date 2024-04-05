@@ -25,7 +25,17 @@ Here are the simplest instructions for working with this utility.
 If you found an issue or would like to submit an improvement to this project, please submit an issue using the issues tab above. If you would like to submit a PR with a fix, reference the issue you created!
 
 ## Known issues
-1. The utility accepts **only integer** file size values. 
+1. If there is a space in the project path or video name, the utility will not work. 
+
+Example:
+
+`C:\cool_folder\source_video.mp4` - the utility will work ✅
+
+`C:\cool folder\source_video.mp4` - the utility will not work ❌
+
+`C:\cool_folder\source video.mp4` - the utility will not work ❌
+
+2. The utility accepts **only integer** file size values. 
 
 Example:
 
@@ -33,15 +43,15 @@ Example:
 
 `Enter the maximum file size in megabytes: 24.8` - the utility will not work ❌
 
-2. All videos are compressed to **720p**, even if the video resolution is lower.
+3. All videos are compressed to **720p**, even if the video resolution is lower.
 
-3. The utility only handles the **.mp4** format
+4. The utility only handles the **.mp4** format
 
-4. All videos are saved in the Bettr8Compressor directory.
+5. All videos are saved in the Bettr8Compressor directory.
 
-5. If you interrupt the program **during compression**, temporary files may remain. You will need to delete them **manually**.
+6. If you interrupt the program **during compression**, temporary files may remain. You will need to delete them **manually**.
 
-6. **Large** files may be compressed to a size slightly larger than specified. I recommend that you specify a **smaller** video file size or compress the finished file again.
+7. **Large** files may be compressed to a size slightly larger than specified. I recommend that you specify a **smaller** video file size or compress the finished file again.
 
 7. If you specify **small** video size, you may get an error about insufficient bitrate. I recommend **increasing** the size of the compressed file and compressing the finished result **again** if necessary.
 
